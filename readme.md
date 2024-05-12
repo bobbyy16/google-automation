@@ -1,4 +1,4 @@
-# Google Drive to Google Sheets and Slack :rocket:
+# Google Drive to Google Sheets and Slack Automation :rocket:
 
 This project automates handling internal exam submissions from students during online classes.
 
