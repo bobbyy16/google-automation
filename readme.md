@@ -1,4 +1,4 @@
-# Online Exam Submission Automation :rocket:
+# Google Drive to Google Sheets and Slack :rocket:
 
 This project automates handling internal exam submissions from students during online classes.
 
