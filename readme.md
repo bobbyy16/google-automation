@@ -32,7 +32,7 @@ Managing internal exams in online classes often involves collecting student answ
    cd  google-automation
    ```
 
-3. \*\*Get credentials.json file from google cloud console.
+3. **Get credentials.json file from google cloud console:** [Watch the video tutorial](https://www.youtube.com/watch?v=rWcLDax-VmM)
 
 4. **Environment Variables:**
 
@@ -59,7 +59,7 @@ Managing internal exams in online classes often involves collecting student answ
 7. **Slack Setup:**
 
    - Create a webhook URL for sending notifications.
-   - Get webhook url by enabling IncomingWebhooks and creating new Webhook URL.
+   - Get webhook url by enabling IncomingWebhooks and creating new Webhook URL [watch video tutorial](https://www.youtube.com/watch?v=sxtC40gUS2A)
    - Use the `SLACK_WEBHOOK_URL` from the `.env` file as the webhook URL.
 
 8. **Google Apps Script:**
