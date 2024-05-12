@@ -1,0 +1,40 @@
+# Dependency directories
+node_modules/
+
+# Logs
+logs/
+*.log
+.env
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Cache directories
+lib-cov/
+coverage/
+.nyc_output/
+.nyc_cache/
+*.code-workspace
+
+# Specific to npm
+npm-debug.log*
+*.yarn-integrity
+
+# Editor directories and files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# others
+credentials.json
