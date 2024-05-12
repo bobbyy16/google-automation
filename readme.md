@@ -73,9 +73,9 @@ Managing internal exams in online classes often involves collecting student answ
 
 ## Screenshots
 
-- Google Drive Folder (https://github.com/bobbyy16/google-automation/blob/main/pictures/drive.png)
-- Google Sheet Log (https://github.com/bobbyy16/google-automation/blob/main/pictures/sheet.png)
-- Slack Notification (https://github.com/bobbyy16/google-automation/blob/main/pictures/slack.png)
+- Google Drive Folder ![Google Drive Folder](https://raw.githubusercontent.com/bobbyy16/google-automation/main/pictures/drive.png)
+- Google Sheet Log ![Google Sheet Log](https://raw.githubusercontent.com/bobbyy16/google-automation/main/pictures/sheet.png)
+- Slack Notification ![Slack Notification](https://raw.githubusercontent.com/bobbyy16/google-automation/main/pictures/slack.png)
 
 ## Project Workflow
 
