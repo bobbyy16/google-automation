@@ -20,15 +20,19 @@ Managing internal exams in online classes often involves collecting student answ
 
 ### Installation
 
-1. Clone the repository:
+1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/online-exam-submission.git
+   git clone https://github.com/your-username/google-automation.git
    ```
 
-## Setup
+2. **Change the current directory:**
 
-1. **Environment Variables:**
+   ```bash
+   cd  google-automation
+   ```
+
+3. **Environment Variables:**
 
    - Create a file named `.env` in the project's root directory.
    - Add the following lines to the `.env` file, replacing placeholders with your actual values:
@@ -40,27 +44,27 @@ Managing internal exams in online classes often involves collecting student answ
      SLACK_WEBHOOK_URL=your_slack_webhook_url
      ```
 
-2. **Google Drive Setup:**
+4. **Google Drive Setup:**
 
    - Create a folder for exam submissions.
    - Use the `FOLDER_ID` from the `.env` file as the folder ID.
 
-3. **Google Sheets Setup:**
+5. **Google Sheets Setup:**
 
    - Create a Google Sheet to log exam submissions.
    - Use the `SHEET_FOLDER_ID` from the `.env` file as the Sheet ID.
 
-4. **Slack Setup:**
+6. **Slack Setup:**
 
    - Create a webhook URL for sending notifications.
    - Use the `SLACK_WEBHOOK_URL` from the `.env` file as the webhook URL.
 
-5. **Deploy Google Apps Script:**
+7. **Google Apps Script:**
 
    - Copy the `Code.gs` file into your Google Apps Script project.
    - Set up a time-driven trigger to run the `sendDataToWebhook` function every 5 minutes.
 
-6. **Run the application:**
+8. **Run the application:**
 
    - Start the Express server using `npm start`.
 
