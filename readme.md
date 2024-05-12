@@ -32,7 +32,9 @@ Managing internal exams in online classes often involves collecting student answ
    cd  google-automation
    ```
 
-3. **Environment Variables:**
+3. \*\*Get credentials.json file from google cloud console.
+
+4. **Environment Variables:**
 
    - Create a file named `.env` in the project's root directory.
    - Add the following lines to the `.env` file, replacing placeholders with your actual values:
@@ -44,27 +46,28 @@ Managing internal exams in online classes often involves collecting student answ
      SLACK_WEBHOOK_URL=your_slack_webhook_url
      ```
 
-4. **Google Drive Setup:**
+5. **Google Drive Setup:**
 
    - Create a folder for exam submissions.
    - Use the `FOLDER_ID` from the `.env` file as the folder ID.
 
-5. **Google Sheets Setup:**
+6. **Google Sheets Setup:**
 
    - Create a Google Sheet to log exam submissions.
    - Use the `SHEET_FOLDER_ID` from the `.env` file as the Sheet ID.
 
-6. **Slack Setup:**
+7. **Slack Setup:**
 
    - Create a webhook URL for sending notifications.
+   - Get webhook url by enabling IncomingWebhooks and creating new Webhook URL.
    - Use the `SLACK_WEBHOOK_URL` from the `.env` file as the webhook URL.
 
-7. **Google Apps Script:**
+8. **Google Apps Script:**
 
    - Copy the `Code.gs` file into your Google Apps Script project.
    - Set up a time-driven trigger to run the `sendDataToWebhook` function every 5 minutes.
 
-8. **Run the application:**
+9. **Run the application:**
 
    - Start the Express server using `npm start`.
 
