@@ -16,22 +16,22 @@ async function authorizeSheets() {
   return jwtClient;
 }
 
-const appendDataToSheet = async () => {
+const appendDataToSheet = async (pdfFile) => {
   try {
     const auth = await authorizeSheets();
     const sheets = google.sheets({ version: "v4", auth });
     const spreadsheetId = process.env.SHEET_FOLDER_ID;
     const range = "Sheet1!A1:D1";
 
-    const pdfFiles = await getAllPDFs();
-
-    const data = pdfFiles.map((file) => [
-      file.name,
-      file.uploaderName,
-      file.uploaderEmail,
-      file.createdTime,
-      file.url,
-    ]);
+    const data = [
+      [
+        pdfFile.name,
+        pdfFile.uploaderName,
+        pdfFile.uploaderEmail,
+        pdfFile.createdTime,
+        pdfFile.url,
+      ],
+    ];
 
     const resource = {
       values: data,
