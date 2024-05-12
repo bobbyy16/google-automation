@@ -13,8 +13,6 @@ Managing internal exams in online classes often involves collecting student answ
 - **Google Sheets Logging:** Data from uploaded files is logged in a Google Sheet for easy tracking.
 - **Slack Notifications:** New submissions trigger notifications sent to relevant parties via Slack.
 
-## Setup
-
 ### Prerequisites
 
 - A Google account with access to Google Drive, Google Sheets, and Slack.
@@ -28,53 +26,54 @@ Managing internal exams in online classes often involves collecting student answ
    git clone https://github.com/your-username/online-exam-submission.git
    ```
 
-   Use code with caution.
+## Setup
 
-2. Set up environment variables:
+1. **Environment Variables:**
 
    - Create a file named `.env` in the project's root directory.
    - Add the following lines to the `.env` file, replacing placeholders with your actual values:
-     ```
+
+     ```plaintext
      PORT=3000
      FOLDER_ID=your_google_drive_folder_id
      SHEET_FOLDER_ID=your_google_sheet_folder_id
      SLACK_WEBHOOK_URL=your_slack_webhook_url
      ```
 
-3. Set up Google Drive:
+2. **Google Drive Setup:**
 
    - Create a folder for exam submissions.
    - Use the `FOLDER_ID` from the `.env` file as the folder ID.
 
-4. Set up Google Sheets:
+3. **Google Sheets Setup:**
 
    - Create a Google Sheet to log exam submissions.
    - Use the `SHEET_FOLDER_ID` from the `.env` file as the Sheet ID.
 
-5. Set up Slack:
+4. **Slack Setup:**
 
    - Create a webhook URL for sending notifications.
    - Use the `SLACK_WEBHOOK_URL` from the `.env` file as the webhook URL.
 
-6. Deploy Google Apps Script:
+5. **Deploy Google Apps Script:**
 
    - Copy the `Code.gs` file into your Google Apps Script project.
    - Set up a time-driven trigger to run the `sendDataToWebhook` function every 5 minutes.
 
-7. Run the application:
+6. **Run the application:**
+
    - Start the Express server using `npm start`.
-
-## License
-
-This project is licensed under the MIT License (see the `LICENSE` file for details).
 
 ## Screenshots
 
-- **Google Drive Folder**
-  ![Google Drive Folder Screenshot](path_to_screenshot)
+- Google Drive Folder
+- Google Sheet Log
+- Slack Notification
 
-- **Google Sheet Log**
-  ![Google Sheet Log Screenshot](path_to_screenshot)
+## Project Workflow
 
-- **Slack Notification**
-  ![Slack Notification Screenshot](path_to_screenshot)
+1. **Student Submission:** Students upload their exam answer sheets as PDFs to the designated folder in Google Drive.
+2. **Automatic Processing:** Every 5 minutes, the project's script automatically processes the newly uploaded exam PDFs in the Google Drive folder.
+3. **Data Logging:** Information from the processed exam PDFs, such as student details and submission timestamps, is logged into a Google Sheet for tracking and record-keeping purposes.
+4. **Slack Notifications:** Upon successful processing of new exam submissions, notifications are sent via Slack to relevant parties, informing them about the new submissions and any other relevant details.
+5. **Continuous Monitoring:** The project continues to run in the background, continuously monitoring the designated Google Drive folder for new exam submissions and repeating the processing and notification cycle as required.
