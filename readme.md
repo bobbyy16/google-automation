@@ -5,6 +5,7 @@ This project automates handling internal exam submissions from students during o
 ## Overview
 
 Managing internal exams in online classes often involves collecting student answer sheets as PDFs. This project offers a streamlined solution using Google Drive, Google Sheets, and Slack for efficient submission management.
+[Demo Video](https://www.loom.com/share/a264f0f5f0a945c1ab870bfafcf553d0?sid=5d277598-445f-40f0-9fb3-be30f72f1adb)
 
 ## Features
 
